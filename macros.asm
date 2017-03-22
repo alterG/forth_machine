@@ -16,7 +16,7 @@ section .text
 
 ; native with 2 arguments 
 %macro native 2
-native %1 %2
+native %1 %2 0
 %endmacro
 
 ; macro for colon words with 3 arguments: word name, word identifier, flags
@@ -33,5 +33,5 @@ xt_ %+ %2:
 
 ; colon with 2 arguments
 %macro colon 2
-colon %1 %2
+colon %1 %2 0
 %endmacro
